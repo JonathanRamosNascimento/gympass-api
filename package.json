@@ -1,0 +1,32 @@
+{
+  "name": "gympass-copy",
+  "version": "1.0.0",
+  "description": "GymPass style app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanRamosNascimento/gympass-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonathanRamosNascimento/gympass-api/issues"
+  },
+  "homepage": "https://github.com/JonathanRamosNascimento/gympass-api#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.5",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "fastify": "^4.14.1"
+  }
+}
