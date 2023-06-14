@@ -30,7 +30,7 @@
     "@vitest/coverage-c8": "0.31.0",
     "@vitest/ui": "0.31.0",
     "eslint": "8.39.0",
-    "prisma": "4.13.0",
+    "prisma": "4.15.0",
     "tsup": "6.7.0",
     "tsx": "3.12.5",
     "typescript": "5.0.2",
@@ -38,7 +38,7 @@
     "vitest": "0.31.0"
   },
   "dependencies": {
-    "@prisma/client": "4.13.0",
+    "@prisma/client": "4.15.0",
     "bcryptjs": "2.4.3",
     "dayjs": "1.11.7",
     "dotenv": "16.0.3",
