@@ -1,7 +1,7 @@
 import { FastifyInstance } from 'fastify'
 import request from 'supertest'
 
-export async function CreateAndAuthenticateUser(app: FastifyInstance) {
+export async function createAndAuthenticateUser(app: FastifyInstance) {
   await request(app.server).post('/users').send({
     name: 'John Doe',
     email: 'johndoe@example.com',

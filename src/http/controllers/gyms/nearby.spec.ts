@@ -1,5 +1,5 @@
 import { app } from '@/app'
-import { CreateAndAuthenticateUser } from '@/utils/test/create-and-authenticate-user'
+import { createAndAuthenticateUser } from '@/utils/test/create-and-authenticate-user'
 import request from 'supertest'
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 
@@ -13,7 +13,7 @@ describe('Nearby Gyms (e2e)', () => {
   })
 
   it('should be able to list nearby gyms', async () => {
-    const { token } = await CreateAndAuthenticateUser(app)
+    const { token } = await createAndAuthenticateUser(app)
 
     await request(app.server)
       .post('/gyms')
